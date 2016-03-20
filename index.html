@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>canvas-fir</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<link rel="stylesheet" href="css/index.css">
+		  <style>
+		  #canvas{
+		    display: block;
+		    position: absolute;
+		    margin:auto;
+		    top:0;
+		    left:0;
+		    right:0;
+		    bottom:0;
+		  }
+		  </style>
+
+	</head>
+	<body>
+	    <figure class="image-show-grid fog-active" data-cloud-id="image-show-grid" data-cloud-options="{ &quot;medium&quot; : [0, -54] }"></figure>
+	    <!-- <div id="sence"> -->
+	    	<canvas id="canvas"width="320"height="320"></canvas>
+		    <img src="images/qizi.png" id="sucai"style="display:none"alt="">
+	    <!-- </div> -->
+	    <div id="butBox">
+			<div id="guize">游戏规则</div>
+			<div id="play">开始</div>
+			<div id="replay">再来一局</div>
+			<div id="time">00:00</div>	
+			<div class="clear"></div>
+	    </div>
+		<script src="js/touch-0.2.14.min.js"></script>
+		<script src="js/index1.js"></script>
+	</body>
+</html>

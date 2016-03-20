@@ -1,0 +1,136 @@
+body,figure{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+#canvas{
+	display: block;
+	/*border:1px solid black;*/
+  border-radius: 5px;
+  background-color:rgba(255,255,255,0.5);
+  box-shadow: 0 10px 15px black;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-300px;
+	margin-top:-300px;
+	/*background: rgb(255,0,0);*/
+}
+
+#butBox{
+  width: 260px;
+  height: 600px;
+  position: absolute;
+  right:30px;
+  top: 80px;
+  /*background: url('../images/butBox.png');*/
+  background-repeat: no-repeat;
+}
+#guize,#play,#replay,#time{
+  width: 120px;
+  height: 53px;
+  border-radius: 10px;
+  /*background: white;*/
+  /*border: 1px solid black;*/
+  font-size: 22px;
+  color: black;
+  font-weight:700;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  left: 60px;
+  cursor: pointer;
+  background: url('../images/button.png');
+  background-size: cover;
+}
+#guize{
+  top: 110px;
+}
+#play{
+  top: 195px; 
+}
+#replay{
+  top: 280px;
+}
+#time{
+  cursor: default;
+  top:365px;
+}
+ .image-show-grid {
+  position: relative;
+  width: 3300px;
+  height: 678px;
+}
+.image-show-grid::before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 3300px 678px;
+  height: 678px;
+  width: 3300px;
+  background-image: url("../images/tu1.jpg");
+  -webkit-animation-name:before;
+  -webkit-animation-duration: 160s;
+  animation-duration: 160s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+ 
+}
+@-webkit-keyframes before {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+
+    50% {
+        -webkit-transform: translate3d(-3300px, 0, 0);
+        transform: translate3d(-3300px, 0, 0)
+    }
+
+    50.001% {
+        -webkit-transform: translate3d(3300px, 0, 0);
+        transform: translate3d(3300px, 0, 0)
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+.image-show-grid::after{
+  content: '';
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 3300px 678px;
+  height: 678px;
+  width: 3300px;
+  background-image: url("../images/tu3.jpg");
+  -webkit-animation-name:after;
+  -webkit-animation-duration: 160s;
+  animation-duration: 160s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes after {
+    0% {
+        -webkit-transform: translate3d(3300px, 0, 0);
+        transform: translate3d(3300px, 0, 0)
+    }
+
+    50% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+
+    100% {
+        -webkit-transform: translate3d(-3300px, 0, 0);
+        transform: translate3d(-3300px, 0, 0)
+    }
+}
